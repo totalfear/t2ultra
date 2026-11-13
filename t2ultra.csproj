@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Use net35 instead if the game's Unity version is old (2017 or earlier). -->
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>t2ultra</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <DebugType>none</DebugType>
+
+    <!-- EDIT THIS, or pass -p:GameDir="..." to dotnet build: the folder containing the game exe and BepInEx folder -->
+    <GameDir Condition="'$(GameDir)' == ''">F:\SteamLibrary\steamapps\common\Takeover 2</GameDir>
+    <DataDir>$(GameDir)\Takeover2_Data\Managed</DataDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>$(GameDir)\BepInEx\core\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(GameDir)\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(DataDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule" Condition="Exists('$(DataDir)\UnityEngine.CoreModule.dll')">
+      <HintPath>$(DataDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI" Condition="Exists('$(DataDir)\UnityEngine.UI.dll')">
+      <HintPath>$(DataDir)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule" Condition="Exists('$(DataDir)\UnityEngine.UIModule.dll')">
+      <HintPath>$(DataDir)\UnityEngine.UIModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
