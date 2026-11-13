@@ -56,3 +56,12 @@ How far the HUD moves toward the edges, from 0 to 1. At 0 the HUD stays in the m
 #Notes
 
 This is an unofficial mod. It isn't connected to the game's developers, and it doesn't include any of the game's files. Don't use BepInEx in games with online anti-cheat, as it could get you banned. Use it at your own risk.
+
+21:9 (Spanned HUD)
+<img width="5120" height="2160" alt="219span" src="https://github.com/user-attachments/assets/5af257e3-2bf2-4b9b-93e2-ef6dff8a1221" />
+
+21:9 Constrained HUD
+<img width="5120" height="2160" alt="219" src="https://github.com/user-attachments/assets/5f33c5cc-3f73-49ee-8c3b-3a43f91b4990" />
+32:9
+<img width="5120" height="1440" alt="329" src="https://github.com/user-attachments/assets/7aee6f57-a2f9-4770-94c2-e491293c3fbd" />
+
