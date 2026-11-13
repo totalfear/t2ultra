@@ -1,5 +1,10 @@
 Ultrawide HUD Fix for Takeover 2
 
+Features:
+21:9 and 32:9 ultrawide support.
+Span HUD to display width, or constrain to a 16:9 window (toggle with F8).
+Fine tune the position of the HUD via the config file.
+
 #Installation
 
 Install BepInEx 5 (the 64-bit version) into your Takeover 2 folder. This is the folder that has the game's .exe file in it.
