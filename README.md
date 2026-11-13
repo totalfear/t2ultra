@@ -1,6 +1,7 @@
-####Takeover 2 Ultrawide Mod####
+#### Takeover 2 Ultrawide Mod
 
-###Features###
+### Features  
+
 21:9 and 32:9 resolutions supported. Choose the 16:9 equivalent in options and it'll automatically adjust.  
 
 Spans the HUD horizontally, to the edges of your display. Press F8 to toggle between spanned and 16:9 constrained HUD.  
